@@ -12,7 +12,7 @@ var img;
 var canvas
 
 function setup() {
-    reateCanvas(800, 250);
+    createCanvas(800, 250);
     // Move the canvas so it's inside our <div id="sketch-holder">.
     //canvas.parent('sketch-holder');
     console.log("this is a js comment");
