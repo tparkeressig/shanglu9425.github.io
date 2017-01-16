@@ -13,10 +13,10 @@ var canvas
 
 function setup() {
     canvas = createCanvas(800, 250);
-    canvas.parent('sketch-holder');
+    // Move the canvas so it's inside our <div id="sketch-holder">.
+    //canvas.parent('sketch-holder');
     console.log("this is a js comment");
     img = loadImage("assets/town.jpg");
-    // Move the canvas so it's inside our <div id="sketch-holder">.
     rectMode(RADIUS);
 }
 
