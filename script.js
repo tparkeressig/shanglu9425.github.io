@@ -9,13 +9,10 @@ var b2 = 0;
 var b3 = 0;
 var yspeed = 2.8;
 var img;
-
-//function preload() {
-//img = loadImage("test.jpg");
-//}
+var canvas
 
 function setup() {
-    var canvas = createCanvas(800, 250);
+    canvas = createCanvas(800, 250);
     canvas.parent('sketch-holder');
     console.log("this is a js comment");
     img = loadImage("assets/town.jpg");
