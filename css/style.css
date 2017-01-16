@@ -13,7 +13,9 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
-    background-color: wheat;
+    /*background-color: wheat;*/
+    /* Rectangle: */
+    background-image: linear-gradient(-269deg, #EE969C 0%, #7E619B 99%);
     margin: 0 0 100px;
 }
 
@@ -43,6 +45,7 @@ body {
 }
 
 .main-content {
+    margin-top: 40px;
     padding-bottom: 60px;
 }
 
