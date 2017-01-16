@@ -2,8 +2,6 @@
 
 // canvas aniamtion
 
-console.log("this is a js comment");
-
 //test
 var b0 = 0;
 var b1 = 0;
@@ -17,7 +15,9 @@ var img;
 //}
 
 function setup() {
-    reateCanvas(800, 250);
+    var canvas = createCanvas(800, 250);
+    canvas.parent('sketch-holder');
+    console.log("this is a js comment");
     img = loadImage("assets/town.jpg");
     // Move the canvas so it's inside our <div id="sketch-holder">.
     rectMode(RADIUS);
