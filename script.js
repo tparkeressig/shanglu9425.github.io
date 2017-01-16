@@ -17,8 +17,8 @@ var img;
 //}
 
 function setup() {
-    img = loadImage("assets/town.jpg");
     var canvas = createCanvas(800, 250);
+    img = loadImage("assets/town.jpg");
     // Move the canvas so it's inside our <div id="sketch-holder">.
     canvas.parent('sketch-holder');
     rectMode(RADIUS);
