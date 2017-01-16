@@ -6,7 +6,7 @@
     <title>MY BLOG</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.21/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.21/p5.js"></script>
     <!-- <script src="scriptdropdown.js"></script> -->
 </head>
 
@@ -17,14 +17,17 @@
             <h1 style="color: #362A46;font-size: 45pt;letter-spacing: 10px;margin-top: 0px;">BLOG. </h1>
             <div id="sketch-holder"></div>
             <div class="button">
-                <a href="#assignment" type="button" class="btn-banner">CONTINUE</button></a>
+                <a href="#assignment" class="btn-banner"> CONTINUE</a>
             </div>
         </div>
     </header>
     <!--link to custom js file-->
     <div id="assignment" class="container main-content">
-        <div class="row clear " style="display: flex;justify-content: space-evenly;justify-items: auto;justify-self: self-end; ">
-            <div style="display: flex;flex-direction: column;flex: 5;justify-content: inherit;justify-self: auto;align-content: initial;/*! align-self: center; *//*! align-items: self-start; */ ">
+        <div class="button text-center" style="top: 5px;">
+            <a href="#assignment" class="btn-banner">GO BACK TOP</a>
+        </div>
+        <div class="row flex-row clear ">
+            <div class="flex-column flex-element-5">
                 <div class="column-4 panel-title ">
                     <article class="content ">
                         <h3>
@@ -32,7 +35,7 @@
                         </h3>
                     </article>
                 </div>
-                <div class="column-4 panel " style="align-self: center; ">
+                <div class="column-4 panel">
                     <article class="content ">
                         <ul>
                             <li>
@@ -42,7 +45,7 @@
                     </article>
                 </div>
             </div>
-            <div style="display: flex;flex-direction: column;flex: 5; ">
+            <div class="flex-column flex-element-5">
                 <div class="column-4 panel-title ">
                     <article class="content ">
                         <h3>
@@ -62,7 +65,7 @@
                     </article>
                 </div>
             </div>
-            <div style="display: flex;flex-direction: column;flex: 5; ">
+            <div class="flex-column flex-element-5">
                 <div class="column-4 panel-title ">
                     <article class="content ">
                         <h3>
@@ -83,13 +86,7 @@
                     </article>
                 </div>
             </div>
-
-
-
-
-
         </div>
-    </div>
     </div>
     <footer class="footer-section ">
         <a href="http://validator.w3.org/check?uri=referer ">Valid HTML 5</a>

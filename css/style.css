@@ -227,3 +227,17 @@ body {
     transition: 0.5s;
     font-size: 11px;
 }
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-element-5 {
+    flex: 5;
+}

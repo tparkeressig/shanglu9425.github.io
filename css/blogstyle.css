@@ -1,0 +1,155 @@
+@font-face {
+    font-family: NovecentowideLightBold;
+    src: url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext)
+}
+
+body {
+    line-height: 30px !important;
+    font-family: 'NovecentowideLightBold', 'Helvetica', 'Arial', sans-serif;
+}
+
+.header {
+    width: 88%;
+    padding: 20px 6%;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-family: 'NovecentowideLightBold', 'Helvetica', 'Arial', sans-serif;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+}
+
+header.header #logo-type {
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    color: #0a0a0a;
+    float: left;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.header a {
+    color: #888888;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.header a:hover {
+    color: #00a651;
+    transition: 1s;
+}
+
+header.header nav.nav {
+    float: right;
+}
+
+nav ul,
+nav li {
+    margin: 0;
+    list-style: none;
+    list-style-image: none;
+}
+
+header.header nav.nav ul li {
+    display: inline;
+    margin: 0px 10px;
+}
+
+#how {
+    background-color: #F4F4F4;
+    padding-bottom: 80px;
+}
+
+#how h2,
+#download h2 {
+    margin: 60px 0px 30px 0px;
+}
+
+.container {
+    max-width: 740px;
+    width: 90%;
+    padding: 0px 5%;
+    margin: auto;
+}
+
+
+/* REST */
+
+tml,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
