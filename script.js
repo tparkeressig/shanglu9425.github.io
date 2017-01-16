@@ -1,18 +1,111 @@
 // p5 file
 
-// open the console window of any browser to see console.log() messages,
-// like print() messages in Processing
+// canvas aniamtion
 
-$(window).scroll(function() {
-    $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
-});
 console.log("this is a js comment");
 
+//test
+var b0 = 0;
+var b1 = 0;
+var b2 = 0;
+var b3 = 0;
+var yspeed = 2.8;
+var img;
+
+//function preload() {
+//img = loadImage("test.jpg");
+//}
+
 function setup() {
+    img = loadImage("assets/town.jpg");
+    var canvas = createCanvas(800, 250);
+    // Move the canvas so it's inside our <div id="sketch-holder">.
+    canvas.parent('sketch-holder');
+    rectMode(RADIUS);
+}
+
+function draw() {
+    background(img);
+    stroke('white');
+    strokeWeight(20);
+    fill('red');
+    rect(100, b0, 100, 250);
+    rect(300, b1, 100, 250);
+    rect(500, b2, 100, 250);
+    rect(700, b3, 100, 250);
+
+    // Test if the cursor is over the box 
+    if (mouseX > 0 && mouseX < 200) { //0
+
+        b0 = b0 - (1 * yspeed);
+        if (b1 < 0) { //add
+            b1 = b1 + (1 * yspeed);
+        }
+        if (b2 < 0) { //add
+            b2 = b2 + (1 * yspeed);
+        }
+        if (b3 < 0) { //add
+            b3 = b3 + (1 * yspeed);
+        }
+    } else if (mouseX > 200 && mouseX < 400) { //1
+        b1 = b1 - (1 * yspeed);
+
+        if (b0 < 0) { //add
+            b0 = b0 + (1 * yspeed);
+        }
+        if (b2 < 0) { //add
+            b2 = b2 + (1 * yspeed);
+        }
+        if (b3 < 0) { //add
+            b2 = b2 + (1 * yspeed);
+        }
+    } else if (mouseX > 400 && mouseX < 600) {
+        b2 = b2 - (1 * yspeed);
+        if (b0 < 0) { //add
+            b0 = b0 + (1 * yspeed);
+        }
+        if (b1 < 0) { //add
+            b1 = b1 + (1 * yspeed);
+        }
+        if (b3 < 0) { //add
+            b3 = b3 + (1 * yspeed);
+        }
+    } else if (mouseX > 600 && mouseX < 800) {
+        b3 = b3 - (1 * yspeed);
+        if (b0 < 0) { //add
+            b0 = b0 + (1 * yspeed);
+        }
+        if (b1 < 0) { //add
+            b1 = b1 + (1 * yspeed);
+        }
+        if (b2 < 0) { //add
+            b2 = b2 + (1 * yspeed);
+        }
+    }
+
+    // Draw the box
+    //rect(100, 0, 100, 250);
+    //rect(300, 0, 100, 250);
+    //rect(500, 0, 100, 250);
+    //rect(700, 0, 100, 250);
+}
+
+
+
+//test
+
+/*function setup() {
     var canvas = createCanvas(800, 250);
     background(255);
     // Move the canvas so it's inside our <div id="sketch-holder">.
     canvas.parent('sketch-holder');
-
-    background(255, 0, 200);
 }
+
+function draw() {
+    if (mouseIsPressed) {
+        fill(0);
+    } else {
+        fill(255);
+    }
+    ellipse(mouseX, mouseY, 80, 80);
+}*/
