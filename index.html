@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MY BLOG</title>
+    <title>PORTAL</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.21/p5.js"></script>
@@ -11,8 +11,14 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="banner-container text-center top">
+            <nav class="nav nav-section">
+                <ul>
+                    <li><a href="pages/blog.html">BLOG</a></li>
+                    <li><a href="http://www.mr-shangster.com">PORTFOLIO</a></li>
+                </ul>
+            </nav>
             <h5 style="color: #50899F; letter-spacing: 7.5px;margin-top: 19.4px;margin-bottom: 0px;margin-right: 30px;">WELCOME TO MY</h5>
             <h1 style="color: #362A46;font-size: 45pt;letter-spacing: 10px;margin-top: 0px;">BLOG. </h1>
             <div id="sketch-holder"></div>
@@ -21,40 +27,39 @@
             </div>
         </div>
     </header>
-    <!--link to custom js file-->
     <div id="assignment" class="container main-content">
         <div class="button text-center" style="top: 5px;">
-            <a href="#assignment" class="btn-banner">GO BACK TOP</a>
+            <a href="#header" class="btn-banner-go-top">GO BACK TOP</a>
         </div>
         <div class="row flex-row clear ">
             <div class="flex-column flex-element-5">
                 <div class="column-4 panel-title ">
-                    <article class="content ">
+                    <div class="content ">
                         <h3>
                             EXERCISES
                         </h3>
-                    </article>
+                    </div>
                 </div>
                 <div class="column-4 panel">
-                    <article class="content ">
+                    <div class="content ">
                         <ul>
                             <li>
                                 Functions 1 | 2
                             </li>
                         </ul>
-                    </article>
+                    </div>
                 </div>
             </div>
             <div class="flex-column flex-element-5">
                 <div class="column-4 panel-title ">
-                    <article class="content ">
+                    <div class="content ">
                         <h3>
                             STUDIOS
                         </h3>
-                    </article>
+                    </div>
                 </div>
                 <div class="column-4 panel ">
-                    <article class="content ">
+                    <div class="content ">
                         <ol>
                             <li>Blah blah blah (blog)</li>
                             <li>Mad Libs 2.0</li>
@@ -62,19 +67,19 @@
                             <li>Time is on my side</li>
                             <li>The library</li>
                         </ol>
-                    </article>
+                    </div>
                 </div>
             </div>
             <div class="flex-column flex-element-5">
                 <div class="column-4 panel-title ">
-                    <article class="content ">
+                    <div class="content ">
                         <h3>
                             PORJECTS
                         </h3>
-                    </article>
+                    </div>
                 </div>
                 <div class="column-4 panel ">
-                    <article class="content ">
+                    <div class="content ">
                         <ul>
                             <li>Topic choice</li>
                             <li>Background research</li>
@@ -83,16 +88,18 @@
                             <li>Needfinding</li>
                             <li>Brainstorm, visual research</li>
                         </ul>
-                    </article>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <footer class="footer-section ">
-        <a href="http://validator.w3.org/check?uri=referer ">Valid HTML 5</a>
-        <a href="http://jigsaw.w3.org/css-validator/check/referer ">Valid CSS</a>
+        <div class="container text-center">
+            <a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a>|<a href="http://jigsaw.w3.org/css-validator/#validate_by_input">Valid CSS</a> |
+            <a href="mailto:qinlu@ucdavis.edu" target="_top">Send Email</a>
+        </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

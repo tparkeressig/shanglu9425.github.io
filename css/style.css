@@ -1,3 +1,8 @@
+@font-face {
+    font-family: NovecentowideLightBold;
+    src: url(http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext)
+}
+
 * {
     box-sizing: border-box;
 }
@@ -9,45 +14,9 @@ a {
 body {
     animation: fadein 2s;
     background-image: none;
-    -moz-animation: fadein 2s;
-    /* Firefox */
-    -webkit-animation: fadein 2s;
-    /* Safari and Chrome */
-    -o-animation: fadein 2s;
-    /* Opera */
 }
 
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadein {
-    /* Firefox */
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadein {
-    /* Safari and Chrome */
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadein {
-    /* Opera */
     from {
         opacity: 0;
     }
@@ -68,7 +37,7 @@ html {
 
 body {
     margin: 0px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'NovecentowideLightBold', 'Helvetica', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -80,7 +49,7 @@ body {
 
 .banner-container {
     position: relative;
-    padding-top: 48px;
+    padding-top: 0px;
     padding-bottom: 48px;
     background-color: white;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.50);
@@ -206,7 +175,6 @@ body {
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    touch-action: manipulation;
     cursor: pointer;
     border: 1px solid #E8E8E8;
     border-radius: 100px;
@@ -218,9 +186,29 @@ body {
     transition: 0.5s;
 }
 
+.btn-banner-go-top {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 100px;
+    padding: 12px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-family: Helvetica;
+    font-size: 10px;
+    transition: 0.5s;
+}
+
+.btn-banner-go-top:hover {
+    padding: 15px 15px;
+    transition: 0.5s;
+    font-size: 11px;
+}
+
 .btn-banner:hover {
-    background-color: ;
-    /* Rectangle 20: */
     background: #FAFAFA;
     box-shadow: 0px 4px 8px 0px rgba(230, 230, 230, 0.50);
     padding: 15px 15px;
@@ -240,4 +228,47 @@ body {
 
 .flex-element-5 {
     flex: 5;
+}
+
+nav {
+    padding-right: 30px;
+}
+
+.nav-section {
+    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+nav ul,
+nav li {
+    font-family: 'NovecentowideLightBold', 'Helvetica', 'Arial', sans-serif;
+    list-style: none;
+    list-style-image: none;
+}
+
+nav.nav ul li {
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    display: inline;
+    margin: 0px 10px;
+}
+
+header a {
+    color: #888888;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 1s;
+}
+
+footer a {
+    color: white;
+    padding: 10px;
+}
+
+header a:hover {
+    color: #50899F;
+    transition: 1s;
 }
